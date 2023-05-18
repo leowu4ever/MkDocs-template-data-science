@@ -1,0 +1,16 @@
+site_name: MkDocs demo doc
+
+theme:
+  name: 'material'
+nav: 
+- Home: index.md
+- API:
+  - Vehicle: vehicle.md
+  - Car: car.md
+- Demo: notebooks/car_demo.ipynb
+
+plugins:
+  - mkdocstrings
+  - include-markdown
+  - mermaid2
+  - mkdocs-jupyter
