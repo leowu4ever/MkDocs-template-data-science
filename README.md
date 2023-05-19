@@ -1,13 +1,13 @@
 # mkdocs-template
 - [mkdocs-template](#mkdocs-template)
-  - [Steps taken to set up MkDocs](#steps-taken-to-set-up-mkdocs)
-  - [This is a demo for mermaid diagram](#this-is-a-demo-for-mermaid-diagram)
+  - [Steps to properly set up MkDocs](#steps-to-properly-set-up-mkdocs)
+  - [Documentation structure](#documentation-structure)
 
 <!--intro-start-->
 
-This repo is created to demonstrate how I write documentation with MkDocs.
+This repo is created to demonstrate how I put together a documentation in MkDocs with several essential components.
 
-## Steps taken to set up MkDocs
+## Steps to properly set up MkDocs
 - pip install mkdocs
 - Mkdocs new . (to create docs folder for MkDocs)
 - pip install mkdocstrings  
@@ -15,10 +15,19 @@ This repo is created to demonstrate how I write documentation with MkDocs.
 - pip install mkdocs-include-markdown-plugin
 
 
-## This is a demo for mermaid diagram
+## Documentation structure
 ```mermaid
-flowchart LR
-a --> b
-b --hi-->d
+%%{init: {'theme':'default'}}%%
+flowchart
+subgraph readme
+mermaid[mermaid diagram]
+end
+docstring[Docstrings]
+demo[Demo notebooks]
+doc[MkDocs documentation]
+
+readme --mkdocs-include & mkdocs-mermaid--> doc
+docstring --mkdocstrings--> doc
+demo --mkdocs-jupyter--> doc
 ```
 <!--intro-end-->
