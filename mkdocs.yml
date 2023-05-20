@@ -4,11 +4,13 @@ theme:
   name: 'material'
   font:
     text: Arial
+  icon:
+    repo: fontawesome/brands/github
     
   palette: 
     # Palette toggle for light mode
     - scheme: default
-      primary: amber
+      primary: deep purple
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
@@ -16,7 +18,7 @@ theme:
 
     # Palette toggle for dark mode
     - scheme: slate
-      primary: amber
+      primary: deep purple
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -48,4 +50,6 @@ extra:
   generator: false
 
 repo_url: https://github.com/leowu4ever/mkdocs-template
+repo_name: mkdocs-template
+
 
