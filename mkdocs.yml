@@ -15,7 +15,6 @@ theme:
         icon: material/brightness-7 
         name: Switch to dark mode
         
-
     # Palette toggle for dark mode
     - scheme: slate
       primary: deep purple
