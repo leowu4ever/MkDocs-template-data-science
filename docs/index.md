@@ -3,17 +3,20 @@ hide:
   - navigation
 ---
 # Overview
-This is a very simple package containing two modules that implement vehicle and car class. The documentation includes the API docstrings for the modules and a demo example in Jupyter notebook.
+This is a very simple package containing two modules that implement vehicle and car classes. The documentation includes the API docstrings for the modules and a demo example in Jupyter notebook.
 
-## Class structure
+## System structure
 ```mermaid
 %%{init: {'theme':'default'}}%%
 flowchart LR
 subgraph Vehicle
-num1[num_of_wheels]
+num1[(num_of_wheels)]
 end
 subgraph Car
-brand[brand]
+num2[(num_of_wheels)]
+brand[(brand)]
+drive[drive]
+
 end
 Car --inherits--> Vehicle
 ```

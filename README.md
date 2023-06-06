@@ -1,7 +1,8 @@
 # MkDocs-template
-This repo is created to demonstrate how I put together a documentation in MkDocs with several essential components.
+This repo is created to demonstrate how I put together a documentation in MkDocs with several essential components for data science projects.
 
-## How to use the template
+## How does it work?
+In the following section, I will explain how what dependencies are required and how to use them properly.
 
 ### Components
 There are three key components required to write comprehensive documentation including scripts with docstring, demo notebooks and project/system diagrams. Each component requires a specific package so that it can be rendered properly in the documentation.
