@@ -1,7 +1,7 @@
 # MkDocs-template
 
 ## Introduction
-This repository is created to demonstrate how I put together documentation for data science projects by utilising MkDocs with several essential extensions. Obviously, comprehensive documentation would cover enough amount of information for different needs. For instance, a system diagram would allow audiences to fairly quickly grasp the overview of the system. Also an API doc would be ideal for those who really want to figure out how to exactly use or configure APIs. Moreover, providing demos in data scientist's favorite 'IDE' jupyter notebook is very beneficial and would be greatly appreciated. In order to incorporate each of those elements in MkDocs, it requires specific packages so that things can be rendered and viewed nicely. In the following section, I will explain how what dependencies are required and how to use them properly.
+This repository is created to demonstrate how I put together documentation for data science projects by utilising MkDocs with several essential extensions. Obviously, comprehensive documentation would cover enough amount of information for different needs. For instance, a system diagram would allow audiences to fairly quickly grasp the overview of the system. Also an API doc would be ideal for those who really want to figure out how to exactly use or configure APIs. Moreover, providing demos in data scientist's favorite 'IDE' jupyter notebook is very beneficial and would be greatly appreciated. In order to incorporate each of those elements in MkDocs, it requires very specific packages so that all the elements can be rendered and viewed nicely. In the following section, I will explain how what dependencies are needed and how to configure them properly.
 
 ## Components
 
@@ -13,9 +13,9 @@ docstring[Docstrings]
 demo[Demo notebooks]
 doc[MkDocs documentation]
 
+mermaid --mkdocs-mermaid--> doc
 docstring --mkdocstrings--> doc
 demo --mkdocs-jupyter--> doc
-mermaid --mkdocs-mermaid--> doc
 ```
 
 ### Mkdocstrings
