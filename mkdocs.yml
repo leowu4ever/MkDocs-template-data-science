@@ -1,5 +1,29 @@
 site_name: MkDocs demo doc
 
+nav: 
+- Home: index.md
+- API:
+  - Vehicle: vehicle.md
+  - Car: car.md
+- Demo: 
+  - Car class demo: notebooks/car_demo.ipynb
+
+plugins:
+  - mkdocstrings
+  - include-markdown
+  - mermaid2
+  - search
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+
+copyright: Created by Leo Wu in 2023
+
+# extra:
+#   generator: false
+
+repo_url: https://github.com/leowu4ever/mkdocs-template
+repo_name: mkdocs-template
+
 theme:
   name: 'material'
   font:
@@ -26,29 +50,3 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
-
-nav: 
-- Home: index.md
-- API:
-  - Vehicle: vehicle.md
-  - Car: car.md
-- Demo: 
-  - Car class demo: notebooks/car_demo.ipynb
-
-plugins:
-  - mkdocstrings
-  - include-markdown
-  - mermaid2
-  - search
-  - mkdocs-jupyter:
-      ignore_h1_titles: True
-
-copyright: Created by Leo Wu in 2023
-
-extra:
-  generator: false
-
-repo_url: https://github.com/leowu4ever/mkdocs-template
-repo_name: mkdocs-template
-
-
