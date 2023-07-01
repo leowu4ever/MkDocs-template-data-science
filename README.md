@@ -34,12 +34,10 @@ theme --mkdocs-material-->template
 ### Setup
 - pip install -r requirements.txt
 - Initialise mkdocs
-
-- Create regular pages
-  - just write like a normal markdown file
-- Create API pages
-  - just reference to the module
-- Organise the structure in the nav section in mkdocs.yml file
-
+- Home page
+   - If you want to re-use readme file
+- API page
+- Demo page
+   - Create a folder named notebooks inside the docs folder. Place the demo notebook in the notebooks folder.
 
 ### Deploy the doc
