@@ -46,3 +46,4 @@ theme --mkdocs-material-->template
 ### Deploy the doc
 To deploy the documentation in github, you can follow the instructions below.
 
+https://squidfunk.github.io/mkdocs-material/publishing-your-site/
