@@ -1,12 +1,16 @@
 # MkDocs template for data science projects
 
-## Introduction
+## Overview
 This repository is created to demonstrate how I put together documentation for data science projects by utilising MkDocs with several essential extensions. Comprehensive documentation should cover the information for different aspects. The proposed template has three pages including the home page, API page and demo page.
 
 The home page serves as a starting point for the project by covering some of the key information, such as the introduction, system diagram and usage guide. It aims to help the audience quickly grasp the overview of the system. The next page is the API page which presents docstrings. It is ideal for those who want to figure out how to exactly use or configure APIs. The last page is the demo page which displays Jupyter notebook demos and it is very beneficial and would be greatly appreciated. To seamlessly integrate these three pages in MkDocs, requires some very specific packages so that all pages can be rendered and presented nicely. In the following section, I will explain what dependencies are needed and how to configure them properly.
 
 ## Components
-Three packages are required including mkdocs-mermaid, mkdocstrings and mkdocs-jupyter. It is quite obvious to tell what job each package does from their names. Mkdocstrings picks up all the docstrings written and format them professionally. Mkdocs-jupyter renders jupyter notebook but it might have difficulties with certain types of outputs, such as interactive plots created by Plotly. Sometimes, it is pretty hard to describe something clearly without visuals. It is even more difficult to keep the system diagram always update to date since the codebase might constantly keep evolving. Mkdocs-mermaid enables rendering mermaid diagrams. (Mermaid diagram is a markdown-based diagram generation tool that allows you to generate various kinds of diagrams using markdown language.)
+Three packages are needed including [mkdocstrings](https://pypi.org/project/mkdocstrings-python/), [mkdocs-jupyter](https://pypi.org/project/mkdocs-jupyter/0.16.1/) and [mkdocs-mermaid](https://pypi.org/project/mkdocs-mermaid2-plugin/). It is quite obvious to tell what job each package does from their names. 
+
+- Mkdocstrings picks up all the docstrings written and format them professionally. It provides great flexibility in controlling how the docstrings are displayed.
+- Mkdocs-jupyter helps to render Jupyter notebook but it would have difficulties with certain types of outputs, such as interactive plots created by Plotly. 
+- Mkdocs-mermaid enables mermaid diagrams rendering. Mermaid diagram is a markdown-based diagram generation tool that allows you to generate various kinds of diagrams using markdown language. The illustration below is created using Mermaid.
 
 ```mermaid
 %%{init: {'theme':'default'}}%%
@@ -18,7 +22,7 @@ demo[demo page]
 mermaid[(mermaid diagram)]
 docstring[(Docstrings)]
 jupyter[(jupyter notebooks)]
-template[mkdocs template for ds project]
+template([mkdocs template for ds project])
 theme[theme]
 
 home -->template
