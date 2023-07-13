@@ -1,5 +1,7 @@
 # MkDocs template for data science projects
 
+[Link to the template](https://leowu4ever.github.io/mkdocs-template/)
+
 ## Overview
 This repository is created to demonstrate how I put together documentation for data science projects by utilising MkDocs with several essential extensions. Comprehensive documentation should cover the information for different aspects. The proposed template has three pages including the home page, API page and demo page.
 
