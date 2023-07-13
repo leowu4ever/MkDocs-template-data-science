@@ -4,32 +4,6 @@ copyright: Created by Leo Wu in 2023
 repo_url: https://github.com/leowu4ever/mkdocs-template
 repo_name: mkdocs-template
 
-# customisation options from mkdocs-material
-# more can be found in https://squidfunk.github.io/mkdocs-material/setup/
-theme:
-  name: 'material'
-  font:
-    text: Arial
-    
-  palette: 
-    - scheme: default
-      primary: deep purple
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-        
-    - scheme: slate
-      primary: deep purple
-      primary: deep purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-
 # hierarchy of pages
 nav: 
 - Home: index.md
@@ -49,3 +23,29 @@ plugins:
   - mermaid2
   - mkdocs-jupyter:
       ignore_h1_titles: True
+
+# The options below are for manipulating the webpage layout. You don't have to change the below.
+# You can follow the guide in https://squidfunk.github.io/mkdocs-material/setup/
+theme:
+  name: 'material'
+  font:
+    text: Arial
+# light & dark mode
+  palette: 
+    - scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+        
+    - scheme: slate
+      primary: deep purple
+      primary: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top

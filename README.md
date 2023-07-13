@@ -36,18 +36,25 @@ theme --mkdocs-material-->template
 
 ## Usage
 ### Setup
-- pip install -r requirements.txt
-- Initialise mkdocs
+You need to make sure Python 3.10.8 is installed.
+- Install all dependencies.
+  - pip install -r requirements.txt.
+- Navigate to a desired directory and initialise MkDocs project named 'xxx'.
+  - mkdocs new 'xxx'
+  - cd 'xxx'
+  - You should be able to see a folder named 'docs' and mkdocs.yml file.
+
+Now the barebone of the template is already in place. The below shows how to create and configure the home page, API page and demo page.
+
 - Home page
-  - Create a markdown file in docs and reference it in the nav section in the mkdocs.yml file. See line 35 in the mkdocs.yml file.
+  - Create a markdown file in the '/docs' folder and reference it in the nav section in the mkdocs.yml file. See line 35 in the mkdocs.yml file.
   - Write on the markdown file like how you usually would do it in a readme file.
 - API page
-  - Make sure the scripts have docstrings.
+  - Make sure python scripts are documented with docstrings.
   - Create a markdown file in docs and reference it in the nav section in the mkdocs.yml file. See lines 36-39 in the mkdocs.yml file.- Demo page
   - Each markdown file can associate with at least one module. To include a module, it follows a convention that is very similar to relative importing. For example, the first line in 'car.md' (:::src.car) means including go up two levels and include all docstrings in the car.py module.
 - Demo page
   - Create a folder named notebooks inside the docs folder. Place the demo notebook in the notebooks folder. Referernce it in the nav section in the mkdocs.yml file. See lines 40-41.
-  
 
 ### Deploy the doc
 To deploy the documentation in github, you can follow the instructions below.
