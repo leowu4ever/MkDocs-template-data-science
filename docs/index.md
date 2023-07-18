@@ -2,6 +2,7 @@
 hide:
   - navigation
 ---
+
 # Overview
 This is a very simple package containing two modules that implement vehicle and car classes. The documentation includes the API docstrings for the modules and a demo example in Jupyter notebook.
 

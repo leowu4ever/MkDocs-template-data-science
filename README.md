@@ -46,19 +46,23 @@ You need to make sure Python 3.10.8 is installed.
   - cd 'xxx'
   - You should be able to see a folder named 'docs' and mkdocs.yml file.
 
+### Page configuration
 Now the barebone of the template is in place. The below shows how to create and configure the home page, API page and demo page.
+- Meta data
+  - Some key information are allowed to be changed. See lines 1-5.
 
 - Home page
-  - Create a markdown file in the '/docs' folder and reference it in the nav section in the mkdocs.yml file. See line 35 in the mkdocs.yml file.
+  - Create a markdown file in the '/docs' folder (can follow **'/docs/index.md'**) and reference it in the nav section in the mkdocs.yml file. See line 9 in the mkdocs.yml file.
   - Write on the markdown file like how you usually would do it in a readme file.
+  - The navigation section on the home page can be hidden with the configuration at the top of the index.md file.
+  
 - API page
   - Make sure Python scripts are documented with docstrings.
-  - Create a markdown file in docs and reference it in the nav section in the mkdocs.yml file. See lines 36-39 in the mkdocs.yml file.- Demo page
+  - Create a markdown file in '/docs' folder (can follow **'/docs/car.md'**) and reference it in the nav section in the mkdocs.yml file. See lines 10-13 in the mkdocs.yml file.
   - Each markdown file can associate with at least one module. To include a module, it follows a convention that is very similar to relative importing. For example, the first line in 'car.md' (:::src.car) means including go up two levels and include all docstrings in the car.py module.
+
 - Demo page
-  - Create a folder named notebooks inside the docs folder. Place the demo notebook in the notebooks folder. Referernce it in the nav section in the mkdocs.yml file. See lines 40-41.
+  - Create a folder named 'notebooks' in the docs folder. Place Jupyter notebooks in the notebooks folder. Reference it in the nav section in the mkdocs.yml file. See lines 14-15.
 
-### Deploy the doc
-To deploy the documentation in GitHub, you can follow the instructions below.
-
-https://squidfunk.github.io/mkdocs-material/publishing-your-site/
+### Additional settings
+Material theme provides a lot of flexibility for page layout configurations. It is fine to reuse the settings from line 28. If you would like to make some changes, you can follow the guide [here](https://squidfunk.github.io/mkdocs-material/setup/).

@@ -1,10 +1,10 @@
-# key info
+# Meta data
 site_name: MkDocs demo doc
 copyright: Created by Leo Wu in 2023
 repo_url: https://github.com/leowu4ever/mkdocs-template
 repo_name: mkdocs-template
 
-# hierarchy of pages
+# Page structure
 nav: 
 - Home: index.md
 - API:
@@ -14,12 +14,11 @@ nav:
 - Demo: 
   - Car class demo: notebooks/car_demo.ipynb
 
-# include what plugins to use. Not really need to change anything here.
+# No need to change anything here.
 plugins:
   - search
   # third party plugins
   - mkdocstrings
-  - include-markdown
   - mermaid2
   - mkdocs-jupyter:
       ignore_h1_titles: True
@@ -27,7 +26,7 @@ plugins:
 # The options below are for manipulating the webpage layout. You don't have to change the below.
 # You can follow the guide in https://squidfunk.github.io/mkdocs-material/setup/
 theme:
-  name: 'material'
+  name: 'material'  # don't remove this line as it tell MkDocs to use Material theme.
   font:
     text: Arial
 # light & dark mode
