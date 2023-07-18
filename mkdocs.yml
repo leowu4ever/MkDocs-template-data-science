@@ -29,16 +29,15 @@ theme:
   name: 'material'  # don't remove this line as it tell MkDocs to use Material theme.
   font:
     text: Arial
-# light & dark mode
+  # light & dark mode
   palette: 
     - scheme: default
-      primary: deep purple
+      primary: deep purple  # header background color
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
         
     - scheme: slate
-      primary: deep purple
       primary: deep purple
       toggle:
         icon: material/brightness-4

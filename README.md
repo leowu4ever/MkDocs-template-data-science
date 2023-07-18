@@ -49,7 +49,7 @@ You need to make sure Python 3.10.8 is installed.
 ### Page configuration
 Now the barebone of the template is in place. The below shows how to create and configure the home page, API page and demo page.
 - Meta data
-  - Some key information are allowed to be changed. See lines 1-5.
+  - Some key information is allowed to be changed. See lines 1-5.
 
 - Home page
   - Create a markdown file in the '/docs' folder (can follow **'/docs/index.md'**) and reference it in the nav section in the mkdocs.yml file. See line 9 in the mkdocs.yml file.
@@ -65,4 +65,7 @@ Now the barebone of the template is in place. The below shows how to create and 
   - Create a folder named 'notebooks' in the docs folder. Place Jupyter notebooks in the notebooks folder. Reference it in the nav section in the mkdocs.yml file. See lines 14-15.
 
 ### Additional settings
-Material theme provides a lot of flexibility for page layout configurations. It is fine to reuse the settings from line 28. If you would like to make some changes, you can follow the guide [here](https://squidfunk.github.io/mkdocs-material/setup/).
+The Material theme provides a lot of flexibility for page layout configurations. It is fine to reuse the settings after line 28. If you would like to make some further changes, you can follow the [Material guide](https://squidfunk.github.io/mkdocs-material/setup/).
+
+## Final words
+The template is created for data scientists/machine learning engineers as a ready-to-use starting point for documentation. It requires only a small amount of adjustments to fit the template for a new project. I wish you find the template useful and welcome any contributions to the project.
