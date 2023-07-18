@@ -1,22 +1,42 @@
+# Meta data
 site_name: MkDocs demo doc
+copyright: Created by Leo Wu in 2023
+repo_url: https://github.com/leowu4ever/mkdocs-template
+repo_name: mkdocs-template
 
+# Page structure
+nav: 
+- Home: index.md
+- API:
+  # sub pages
+  - Vehicle: vehicle.md
+  - Car: car.md
+- Demo: 
+  - Car class demo: notebooks/car_demo.ipynb
+
+# No need to change anything here.
+plugins:
+  - search
+  # third party plugins
+  - mkdocstrings
+  - mermaid2
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+
+# The options below are for manipulating the webpage layout. You don't have to change the below.
+# You can follow the guide in https://squidfunk.github.io/mkdocs-material/setup/
 theme:
-  name: 'material'
+  name: 'material'  # don't remove this line as it tell MkDocs to use Material theme.
   font:
     text: Arial
-  icon:
-    repo: fontawesome/brands/github
-    
+  # light & dark mode
   palette: 
-    # Palette toggle for light mode
     - scheme: default
-      primary: deep purple
+      primary: deep purple  # header background color
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
         
-
-    # Palette toggle for dark mode
     - scheme: slate
       primary: deep purple
       toggle:
@@ -27,29 +47,3 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
-
-nav: 
-- Home: index.md
-- API:
-  - Vehicle: vehicle.md
-  - Car: car.md
-- Demo: 
-  - Car class demo: notebooks/car_demo.ipynb
-
-plugins:
-  - mkdocstrings
-  - include-markdown
-  - mermaid2
-  - search
-  - mkdocs-jupyter:
-      ignore_h1_titles: True
-
-copyright: Created by Leo Wu in 2023
-
-extra:
-  generator: false
-
-repo_url: https://github.com/leowu4ever/mkdocs-template
-repo_name: mkdocs-template
-
-

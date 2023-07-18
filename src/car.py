@@ -25,4 +25,14 @@ class Car(Vehicle):
         '''
         return self._brand
     
+    def drive(self, num_of_miles: float) -> None:
+        '''
+        Drive the vehicle for a given number of miles
 
+        Args:
+            num_of_miles (float): how far to drive the vehicle
+        '''
+        print('starting engine')
+        print(f'driving forward for {num_of_miles} mile(s)')
+        print('stopping')
+        

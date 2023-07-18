@@ -3,24 +3,21 @@ hide:
   - navigation
 ---
 
-# mkdocs-template
-This repo is created to demonstrate how I put together a documentation in MkDocs with several essential components.
+# Overview
+This is a very simple package containing two modules that implement vehicle and car classes. The documentation includes the API docstrings for the modules and a demo example in Jupyter notebook.
 
-## Steps to set up MkDocs
-pip install -r requirements.txt
-
-## Documentation structure
+## System structure
 ```mermaid
 %%{init: {'theme':'default'}}%%
-flowchart
-subgraph readme
-mermaid[mermaid diagram]
+flowchart LR
+subgraph Vehicle
+num1[(num_of_wheels)]
 end
-docstring[Docstrings]
-demo[Demo notebooks]
-doc[MkDocs documentation]
+subgraph Car
+num2[(num_of_wheels)]
+brand[(brand)]
+drive[drive]
 
-readme --mkdocs-include & mkdocs-mermaid--> doc
-docstring --mkdocstrings--> doc
-demo --mkdocs-jupyter--> doc
+end
+Car --inherits--> Vehicle
 ```
