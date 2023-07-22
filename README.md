@@ -69,9 +69,8 @@ The Material theme provides a lot of flexibility for page layout configurations.
 
 ### Deployment
 GitHub and GitLab can both host static webpages. I will cover how to do deploy the pages on GitHub. 
-- Create a GitHub action by including '.github/workflows/ci.yml' in the root directory of your repository. Whenever there is a commit to the main branch, the action is trigged and it build the pages for you.
-- Go to the repository setting, under the 'Pages' tab and 'Build and deployment' section, select 'Deploy from a branch' as the Source, select 'gh-pages' as the 'Branch'. So once the gh-pages branch is updated, it will trigger the deployment pipeline. You can go the action tag and look for the link that is deployed. 
-
+- Create a GitHub action by including '.github/workflows/ci.yml' in the root directory of your repository. Whenever there is a commit to the main branch, the action is trigged and it builds the pages for you.
+- Go to the repository setting, under the 'Pages' tab of the left and 'Build and deployment' section, select 'Deploy from a branch' as the Source and select 'gh-pages' as the 'Branch'. So once the gh-pages branch is updated, it will trigger the deployment pipeline. You can go the action tag and look for the link that is deployed. 
 
 ## Final words
 The template is created for data scientists/machine learning engineers as a ready-to-use starting point for documentation. It requires only a small amount of adjustments to fit the template for a new project. I wish you find the template useful and welcome any contributions to the project.
